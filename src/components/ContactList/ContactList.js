@@ -3,6 +3,7 @@ import {
   NumberOrder,
   Number,
   DeleteContact,
+  ContactListBox,
 } from './ContactList.styled';
 import { useSelector } from 'react-redux';
 import {
@@ -31,7 +32,7 @@ export const ContactList = () => {
     <>
       {isFetching && <h3>Loading...</h3>}
       {contacts && (
-        <ul>
+        <ContactListBox>
           {filteredContacts.map((contact, index) => (
             <ListItem key={index}>
               <NumberOrder>{index + 1}</NumberOrder>
@@ -47,7 +48,7 @@ export const ContactList = () => {
               </DeleteContact>
             </ListItem>
           ))}
-        </ul>
+        </ContactListBox>
       )}
     </>
   );

@@ -1,26 +1,22 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContactListBox = styled.ul`
-  margin: 10px;
-  padding: 10px;
-  width: 320px;
-  background-color: #dcdcdc;
-  border: 1px solid black;
-  border-radius: 5px;
+  padding: 0;
+`;
+export const ContactListContainer = styled.div`
+  padding: 0;
 `;
 export const ListItem = styled.li`
   display: flex;
   list-style: none;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   max-width: 320px;
   background-color: white;
   border-radius: 2px;
 `;
 export const NumberOrder = styled.span`
-  margin-right: 10px;
   padding: 0 5px;
-  width: 10px;
   border-radius: 5px;
 `;
 export const Number = styled.span`

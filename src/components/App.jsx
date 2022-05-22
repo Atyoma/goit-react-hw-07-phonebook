@@ -3,7 +3,7 @@ import ContactForm from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 import { FormBox, Phonebook } from './ContactForm/ContactForm.styled';
-import { ContactListBox } from './ContactList/ContactList.styled';
+import { ContactListContainer } from './ContactList/ContactList.styled';
 
 export default function App() {
 
@@ -13,11 +13,10 @@ export default function App() {
         <h1>Phonebook</h1>
         <ContactForm />
       </FormBox>
-      <ContactListBox>
-        <h2>Contact List</h2>
+      <ContactListContainer>
         <Filter />
           <ContactList />
-      </ContactListBox>
+      </ContactListContainer>
     </Phonebook>
   );
 }
