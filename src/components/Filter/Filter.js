@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { changeFilter } from '../../redux/contactSlice';
+import { changeFilter } from '../../redux/filterSlice';
 import PropTypes from 'prop-types';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(state => state.contacts.filter);
+  const filter = useSelector(state => state.filter.value);
 
   const filterChange = e => {
     e.preventDefault();
